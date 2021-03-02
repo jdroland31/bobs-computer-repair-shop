@@ -1,0 +1,118 @@
+<!--
+ * Title: Assignment 9.3 - Bob's Computer Repair Shop;
+ * Author: Professor Krasso;
+ * Date: 3/1/2021;
+ * Modified By: Jonathan Roland;
+ * Description: This site is meant to demonstrate Bob's Computer Repair Shop as an online ordering platform;
+-->
+
+<!--
+  This file provides the view for the home component (which is also the order form).
+  The user's total will be automatically calculated based on their selections.
+  This component was meant to hoist the shopping cart data to the parent level so it could be used by other components, but I was unable to get it working.
+-->
+
+<h2>Welcome to Bob's!</h2>
+<h2>We offer the following services for your PC needs:</h2>
+<br>
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+    <table width="100%">
+      <tr>
+        <td>
+          <input class="optionCheck" type="checkbox" id="cartPassword" (change)="getChanges()" value=39.99 name="Password Reset">
+        </td>
+        <td>
+          <h6>Password Reset</h6>
+        </td>
+        <td>
+          <h6>$39.99</h6>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input class="optionCheck" type="checkbox" id="cartSpyware" (change)="getChanges()" value=99.99 name="Spyware Removal">
+        </td>
+        <td>
+          <h6>Spyware Removal</h6>
+        </td>
+        <td>
+          <h6>$99.99</h6>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input class="optionCheck" type="checkbox" id="cartRam"  (change)="getChanges()" value=129.99 name="RAM Upgrade">
+        </td>
+        <td>
+          <h6>RAM Upgrade</h6>
+        </td>
+        <td>
+          <h6>$129.99</h6>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input class="optionCheck" type="checkbox" id="cartInstallation"  (change)="getChanges()" value=49.99 name="Software Installation">
+        </td>
+        <td>
+          <h6>Software Installation</h6>
+        </td>
+        <td>
+          <h6>$49.99</h6>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input class="optionCheck" type="checkbox" id="cartTuneUp"  (change)="getChanges()" value=89.99 name="Tune-up">
+        </td>
+        <td>
+          <h6>Tune-up</h6>
+        </td>
+        <td>
+          <h6>$89.99</h6>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input class="optionCheck" type="checkbox" id="cartCleaning"  (change)="getChanges()" value=45 name="Keyboard Cleaning">
+        </td>
+        <td>
+          <h6>Keyboard Cleaning</h6>
+        </td>
+        <td>
+          <h6>$45.00</h6>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input class="optionCheck" type="checkbox" id="cartDisk"  (change)="getChanges()" value=149.99 name="Disk Clean-up">
+        </td>
+        <td>
+          <h6>Disk Clean-up</h6>
+        </td>
+        <td>
+          <h6>$149.99</h6>
+        </td>
+      </tr>
+    </table>
+    <hr>
+    <div class="row">
+      <div class='col-sm-1'>
+        <span class="material-icons">
+          play_arrow
+        </span>
+      </div>
+      <div class='col-sm-5'>
+        <h6 style="text-align: left">Total</h6>
+      </div>
+      <div class='col-sm-6'>
+        <h6 style="text-align: center">${{total.toFixed(2)}}</h6>
+    </div>
+    <button routerLink='../checkout' class="btn btn-block" (click)="onClick()">Go To Cart</button>
+  </div>
+  <div class="col-md-4"></div>
+</div>
+
+

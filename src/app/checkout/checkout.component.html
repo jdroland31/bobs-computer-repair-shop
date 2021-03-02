@@ -1,0 +1,88 @@
+<!--
+ * Title: Assignment 9.3 - Bob's Computer Repair Shop;
+ * Author: Professor Krasso;
+ * Date: 3/1/2021;
+ * Modified By: Jonathan Roland;
+ * Description: This site is meant to demonstrate Bob's Computer Repair Shop as an online ordering platform;
+-->
+
+<!--
+  This file provides the view for the user's shopping cart and checkout information form once selections have been made.
+  The cart display was meant to be hydrated by data collected from the home component but I was unable to successfully hoist it over.
+  Static values represent the cart selection and total for now.
+-->
+
+<!-- <div *ngFor="let option of cart">
+  {{ option.name }}
+  {{ option.price }}
+</div> -->
+<div class="row">
+  <div class="col-md-5">
+    <form>
+      <h3>Your Info</h3>
+      <div class="row">
+          <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="First Name" required>
+            <input type="text" class="form-control" placeholder="Last Name" required>
+            <input type="text" class="form-control" placeholder="Company">
+            <input type="text" class="form-control" placeholder="Email" required>
+            <input type="text" class="form-control" placeholder="Phone #" required>
+          </div>
+          <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Street 1" required>
+            <input type="text" class="form-control" placeholder="Street 2">
+            <input type="text" class="form-control" placeholder="City" required>
+            <input type="text" class="form-control" placeholder="State" required>
+            <input type="text" class="form-control" placeholder="Zip" required>
+          </div>
+      </div>
+      <br>
+      <h3>Payment Info</h3>
+      <div class="row">
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Card Number" required>
+          <input type="text" class="form-control" placeholder="Name on card" required>
+          <input type="text" class="form-control" placeholder="Expiration" required>
+          <input type="text" class="form-control" placeholder="CVV#" required>
+          <input type="text" class="form-control" placeholder="ZIP" required>
+        </div>
+        <div class="col-md-6"></div>
+      </div>
+  </form>
+  </div>
+  <div class="col-md-2 vert-line">
+  </div>
+  <div class="col-md-5">
+    <h3 style="text-align: center">Your Cart</h3>
+    <div class="row">
+      <div class="col-md-1">
+
+      </div>
+      <div class="col-md-8">
+        <h6>Password Reset</h6>
+        <h6>Spyware Removal</h6>
+      </div>
+      <div class="col-md-3">
+        <h6>$39.99</h6>
+        <h6>$99.99</h6>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-1">
+        <span class="material-icons">
+          play_arrow
+        </span>
+      </div>
+      <div class="col-md-8">
+        <h6>Pre-Total*</h6>
+      </div>
+      <div class="col-md-3">
+        <h6>$139.99</h6>
+      </div>
+    </div>
+    <p>*price does not include work hours for custom repairs. Such specialized services will be assessed after work is completed @ $50.00 per hour.</p>
+    <br>
+    <button class="btn btn-block">Place Order</button>
+  </div>
+</div>

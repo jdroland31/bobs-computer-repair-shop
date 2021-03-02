@@ -1,0 +1,102 @@
+<!--
+ * Title: Assignment 9.3 - Bob's Computer Repair Shop;
+ * Author: Professor Krasso;
+ * Date: 3/1/2021;
+ * Modified By: Jonathan Roland;
+ * Description: This site is meant to demonstrate Bob's Computer Repair Shop as an online ordering platform;
+-->
+
+<!--
+  This file is the view for the worker orders area, where workers can fulfill existing orders, including adding in additional labor hours.
+  This view was meant to include dynamic data from generated orders, but I was unable to capture order data in any useful way.
+  It is currently displayed with static example data.
+ -->
+
+<div class="row">
+  <div class="col-md-5">
+    <h3>Incomplete Orders</h3>
+    <hr>
+    <div class="orders-list">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">
+            Order ID: 12345
+          </h4>
+          <ul class="card-text">
+            <li>Password Reset</li>
+            <li>Spyware Removal</li>
+          </ul>
+          <br>
+          <p>Bob Smith</p>
+          <p>123 Imaginary Street</p>
+          <p>Nashville</p>
+          <p>Tennessee</p>
+          <p>11111</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">
+            Order ID: 54321
+          </h4>
+          <ul class="card-text">
+            <li>Keyboard Cleaning</li>
+            <li>RAM Upgrade</li>
+          </ul>
+          <br>
+          <p>Jane Doe</p>
+          <p>1354 Second Avenue</p>
+          <p>Ney York City</p>
+          <p>New York</p>
+          <p>62576</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">
+            Order ID: 632643
+          </h4>
+          <ul class="card-text">
+            <li>Keyboard Cleaning</li>
+            <li>RAM Upgrade</li>
+          </ul>
+          <br>
+          <p>Doug Gentry</p>
+          <p>525 Fake Street</p>
+          <p>Apt. 112</p>
+          <p>Boise</p>
+          <p>Idaho</p>
+          <p>32904</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-2 vert-line"></div>
+  <div class="col-md-5">
+    <h3 >Order Completion</h3>
+    <hr>
+    <form>
+      <div class="row">
+        <div class="col-md-12">
+          <input type="text" class="form-control" placeholder="First Name">
+          <input type="text" class="form-control" placeholder="Last Name">
+          <input type="text" class="form-control" placeholder="Worker ID">
+          <input type="number" class="form-control" placeholder="Order ID">
+          <input type="number" class="form-control" placeholder="Extra Hours">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="fulfilled">
+            <label for="fulfilled" class="form-check-label">Fulfilled?</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="shipped">
+            <label for="shipped" class="form-check-label">Shipped?</label>
+          </div>
+          <input type="text" class="form-control" placeholder="Tracking Number">
+        </div>
+      </div>
+      <br>
+      <br>
+      <button class="btn btn-block">Mark Complete</button>
+    </form>
+  </div>
+</div>

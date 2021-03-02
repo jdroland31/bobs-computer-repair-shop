@@ -1,3 +1,13 @@
+/*============================================;
+Title: Assignment 9.3 - Bob's Computer Repair Shop;
+Author: Professor Krasso;
+Date: 3/1/2021;
+Modified By: Jonathan Roland;
+Description: This site is meant to demonstrate Bob's Computer Repair Shop as an online ordering platform;
+===========================================*/
+
+//This files serves as the specification for the app component.
+
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';

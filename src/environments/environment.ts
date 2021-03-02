@@ -1,3 +1,11 @@
+/*============================================;
+Title: Assignment 9.3 - Bob's Computer Repair Shop;
+Author: Professor Krasso;
+Date: 3/1/2021;
+Modified By: Jonathan Roland;
+Description: This site is meant to demonstrate Bob's Computer Repair Shop as an online ordering platform;
+===========================================*/
+
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
